@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+    </head>
+    <body>
+        <form action="next" id="demo-form" method="post">
+        <button class="g-recaptcha" 
+        data-sitekey="TODO"
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
+        <script>
+            function onSubmit(token) {
+              document.getElementById("demo-form").submit();
+            }
+        </script>
+        </form>
+    </body>
+</html>
