@@ -6,6 +6,10 @@ def index(request):
     return render(request, 'mysite/index.html', {})
 
 
+def v2(request):
+    return render(request, 'mysite/v2.html', {})
+
+
 @csrf_exempt
 def post_next(request):
     import json
